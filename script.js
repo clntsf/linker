@@ -11,3 +11,4 @@ function encodeStr(){
     str_input = document.getElementById("input").value;
     document.getElementById("output").innerHTML = `ctsf1.github.io/linker/index.html?${btoa(str_input)}`;
 }
+getRedirectLink()
