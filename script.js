@@ -1,7 +1,8 @@
 function getRedirectLink(){
-    args = window.location.search.substring(1)
+    args = atob(window.location.search.substring(1)).split('%')
+    $('head').append(`<title>${args[1]}</title>`)
     if (args != ''){
-        try {window.location.href = atob(args)}
+        try {window.location.href = args[0]}
         catch(e){}
     }
     return
