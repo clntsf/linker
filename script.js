@@ -9,5 +9,5 @@ function getRedirectLink(){
 
 function encodeStr(){
     link= document.getElementById("link-input").value;
-    document.getElementById("output").innerHTML = `ctsf1.github.io/linker?${btoa(link)}`;
+    document.getElementById("output").innerHTML = `clntsf.github.io/linker?${btoa(link)}`;
 }
